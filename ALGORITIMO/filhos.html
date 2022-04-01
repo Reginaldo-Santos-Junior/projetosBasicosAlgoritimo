@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Quantos filhos tem" id="input_filhos">
+    <button onclick="verificar"> Verificar situação </button>
+    <div id="spanzinho"></div>
+</body>
+</html>
+
+<script>
+    var filho = Number (input_filhos.value)
+    if(filho <1 ){
+        
+    }
+    if(filho == 1 ){
+        spanzinho.innerHTML = `Voce tem um herdeiro`
+    }
+    if(filho >= 2 ){
+        spanzinho.innerHTML = `Crescei e multiplicai-vos!`
+    }
+</script>

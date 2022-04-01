@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btn_nota1()">NOTA 1</button>
+    <button onclick="btn_nota2()">NOTA 2</button>
+    <button onclick="btn_nota3()">NOTA 3</button>
+    <button onclick="btn_nota4()">NOTA 4</button>
+    <button onclick="btn_nota5()">NOTA 5</button>
+    <br> 
+    <span id="span_avaliacao"><b>Sua avaliação:</b></span>
+    <br>
+    <div id="span_imagem" style="width: 300px; height: 300px;"></div>
+</body>
+</html>
+<script>
+        var contador = 0
+        var notas = 0
+    function btn_nota1(){
+        contador +=1
+        notas += 1
+        notas_reais = notas/contador
+        span_avaliacao.innerHTML = `<b>Sua avaliação:${notas_reais.toFixed(1)}.</b>`
+        if (notas_reais > 4.5){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/g9shwHub.jpg">`
+    }
+    else if(notas_reais > 3){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/I23eIi1b.jpg">`
+    }
+    else if(notas_reais > 2){
+        span_imagem.innerHTML = `<img src="https://thumbs.dreamstime.com/b/express%C3%A3o-neutra-49130557.jpg">`
+    }
+    else{
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/8nLFCVPb.jpg">`
+    }
+    }
+    function btn_nota2(){
+        contador +=1
+        notas += 2
+        notas_reais = notas/contador
+        span_avaliacao.innerHTML = `<b>Sua avaliação:${notas_reais.toFixed(1)}.</b>`
+        if (notas_reais > 4.5){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/g9shwHub.jpg">`
+    }
+    else if(notas_reais > 3){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/I23eIi1b.jpg">`
+    }
+    else if(notas_reais > 2){
+        span_imagem.innerHTML = `<img src="https://thumbs.dreamstime.com/b/express%C3%A3o-neutra-49130557.jpg">`
+    }
+    else{
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/8nLFCVPb.jpg">`
+    }
+    }
+    function btn_nota3(){
+        contador +=1
+        notas += 3
+        notas_reais = notas/contador
+        span_avaliacao.innerHTML = `<b>Sua avaliação:${notas_reais.toFixed(1)}.</b>`
+        if (notas_reais > 4.5){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/g9shwHub.jpg">`
+    }
+    else if(notas_reais > 3){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/I23eIi1b.jpg">`
+    }
+    else if(notas_reais > 2){
+        span_imagem.innerHTML = `<img src="https://thumbs.dreamstime.com/b/express%C3%A3o-neutra-49130557.jpg">`
+    }
+    else{
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/8nLFCVPb.jpg">`
+    }
+    }
+    function btn_nota4(){
+        contador +=1
+        notas += 4
+        notas_reais = notas/contador
+        span_avaliacao.innerHTML = `<b>Sua avaliação:${notas_reais.toFixed(1)}.</b>`
+        if (notas_reais > 4.5){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/g9shwHub.jpg">`
+    }
+    else if(notas_reais > 3){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/I23eIi1b.jpg">`
+    }
+    else if(notas_reais > 2){
+        span_imagem.innerHTML = `<img src="https://thumbs.dreamstime.com/b/express%C3%A3o-neutra-49130557.jpg">`
+    }
+    else{
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/8nLFCVPb.jpg">`
+    }
+    }
+    function btn_nota5(){
+        contador +=1
+        notas += 5
+        notas_reais = notas/contador
+        span_avaliacao.innerHTML = `<b>Sua avaliação:${notas_reais.toFixed(1)}.</b>`
+        if (notas_reais > 4.5){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/g9shwHub.jpg">`
+    }
+    else if(notas_reais > 3){
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/I23eIi1b.jpg">`
+    }
+    else if(notas_reais > 2){
+        span_imagem.innerHTML = `<img src="https://thumbs.dreamstime.com/b/express%C3%A3o-neutra-49130557.jpg">`
+    }
+    else{
+        span_imagem.innerHTML = `<img src="https://i.imgur.com/8nLFCVPb.jpg">`
+    }
+    }   
+</script>

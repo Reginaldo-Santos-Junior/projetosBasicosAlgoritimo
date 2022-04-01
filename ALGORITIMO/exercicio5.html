@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="inputraiz" placeholder="Insira um numero" /> 
+    <br>
+    <input id="inputraiz2" placeholder="Insira um numero">
+    <br>
+    <button onclick="raiz4()">calcular raiz</button>
+    <br>
+    <div style="color: aqua; background-color: black; width: 178px;" id="spanraiz"></div>
+  </body>
+</html>
+<script>
+  function raiz4() {
+    var valornun = inputraiz2.value;
+    var valornum = inputraiz.value;
+    var valor = valornum ** (1 / 2);
+    spanraiz.innerHTML = `A ${valornun}° raiz de ${valornum} dá ${valor.toFixed(
+      2
+    )}`;
+  }
+</script>

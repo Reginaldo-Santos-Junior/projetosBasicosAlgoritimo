@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span style="color: black;" id="span_contador"></span>
+    <br>
+    <button onclick="contagem()">Clique aqui</button>
+</body>
+</html>
+<script>
+    var contador = 0
+    function contagem(){
+        contador = contador + 1
+
+        if(contador > 15){
+            span_contador.innerHTML = `<b>MESTRE DOS CLIQUES, TU JÁ CLICOU </b>${contador} VEZES`
+        }
+        else if(contador > 11){
+        span_contador.innerHTML = `<b>Esta treinando em casa? já clicou ${contador} vezes </b> `
+    }
+    else if (contador > 5){
+        span_contador.innerHTML = `<b>Tu ta na média, ja clicou ${contador} vezes</b>`
+    }
+    else{
+        span_contador.innerHTML = `<b>Ta fraquinho hein, só clicou ${contador} vezes</b>`
+    }
+    }
+</script>

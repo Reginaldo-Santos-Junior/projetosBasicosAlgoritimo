@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input placeholder="Valor do carro a vista" id="carro">
+<br>
+<input placeholder="Taxa de juros ao mês" id="juros" >
+<br>
+<input placeholder="Quantidade de parcelas" id="parcelas">
+<br>
+<button onclick="preju()"> Calcular prejú </button>
+<div id="span_talho"></div>
+    
+</body>
+</html>
+<script>
+function preju(){
+var carroTotal = Number(carro.value)
+var jurosTotal = Number(juros.value)
+var parcelasTotal = Number(parcelas.value)
+var juros_corrigido = 1 + (jurosTotal / 100)
+var calculo1 = carroTotal / parcelasTotal
+var calculo_pg = (calculo1 * (juros_corrigido**parcelasTotal-1)) / (juros_corrigido-1)
+var calculo_descontado = carroTotal * 0.8
+var total_de_carros = calculo_pg / carroTotal
+span_talho.innerHTML = `Seu carro vai sair por ${calculo_pg.toFixed(2)}, após 1 mês, ele já vai valer só ${calculo_descontado.toFixed(2)}. Porque comprou financiado, vai pagar o correspondente a ${total_de_carros.toFixed(2)} carros!` 
+
+
+
+}
+
+
+
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>é as bolas do dragão</title>
+</head>
+<body>
+    <input id="KI" placeholder="Coloque seu KI"><br>
+    <b> Transformar em:</b><br>
+    <button onclick="ssj()">SSJ</button> <button onclick="ssj2()">SSJ2</button> <button onclick="ssj3()">SSJ3</button>
+    
+    <div id="sayajin"></div>
+    <div id="img"></div>
+</body>
+</html>
+
+<script>
+    function ssj(){
+        var base = Number(KI.value)
+        var transformação= base * 50
+        sayajin.innerHTML="Após se transformar em SSJ, o ki desse Sayajin passa a ser de "+  transformação+"<br><img src='https://i.imgur.com/lRxswN7.gif' >"
+        
+    }
+
+    function ssj2(){
+        var base= Number(KI.value)
+        var transformação = base * 100
+        sayajin.innerHTML="Após se transformar em SSJ 2, o ki desse Sayajin passa a ser de "+  transformação+"<br><img src='https://i.imgur.com/TZ27cRu.gif' >"
+    }
+
+    function ssj3(){
+        var base= Number(KI.value)
+        var transformação = base * 200 
+        sayajin.innerHTML="Após se transformar em SSJ 3, o ki desse Sayajin passa a ser de "+  transformação+"<br><img src=' https://i.imgur.com/8n6cCUO.gif' >"
+    }
+</script>

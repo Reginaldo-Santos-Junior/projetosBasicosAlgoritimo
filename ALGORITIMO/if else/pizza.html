@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input_valor" placeholder="Valor da pizza">
+    <input id="qtd_amigos" placeholder="Quantidade de amigos">
+    <button onclick="rola_pizza()">Rola a pizza?</button>
+    <div id="pizzaria"></div>
+</body>
+</html>
+<script>
+    function rola_pizza(){
+        var valor = Number(input_valor.value)
+        var amigos = Number (qtd_amigos.value)
+        var valor_pizza = valor / amigos
+        pizzaria.innerHTML
+        if (valor_pizza <= 20.00){
+            pizzaria.innerHTML = `Uhu! vamos pedir a pizza!
+            Cada amigo vai pagar $${valor_pizza}!`
+        }
+        else{
+            pizzaria.innerHTML = `Deu ruim! pizza muito cara!`
+        }
+    }
+</script>

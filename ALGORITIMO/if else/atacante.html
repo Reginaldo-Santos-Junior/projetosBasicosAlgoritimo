@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="input_partidas" placeholder="Partidas Jogadas">
+    <br>
+    <input id="input_gols" placeholder="Gols marcados">
+    <br>
+    <button onclick="ataque()">Estudar Atacante</button>
+    <div id="spantatubarao"></div>
+
+</body>
+</html>
+<script>
+    function ataque(){
+        var partidas = Number(input_partidas.value)
+        var gols= Number(input_gols.value)
+        var media = gols / partidas
+        spantatubarao.innerHTML = `nha, atacante mediano vai.<br>
+            <img src="https://www.lance.com.br/files/article_main/uploads/2021/11/21/619ab6a95e0a7.jpeg"><br>
+            Sua media de gols é de ${media}`
+        if(media < 0.2){
+            spantatubarao.innerHTML = `Vishhh.. melhor trocar de atacante.. <br>
+            <img src="https://s2.glbimg.com/O6iJmzHnpPYUlZBqLL4b9U5ahHM=/0x0:2000x1335/1008x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2016/06/19/bpp20160619078_37lDuSm.jpg"><br>
+            Sua media de gols é de ${media}`}
+          
+        if(media >0.6){
+            spantatubarao.innerHTML = `uouuuu!, esse é o tal atacante do futuro, craque tá?.<br>
+            <img src="https://www.lance.com.br/files/article_main/uploads/2022/02/04/61fd2d1353ed6.jpeg"><br>
+            Sua media de gols é de ${media}`
+        }
+    }
+    
+</script>

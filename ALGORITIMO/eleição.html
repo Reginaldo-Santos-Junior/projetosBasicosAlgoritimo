@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 is coming</title>
+</head>
+<body>
+    <input type="number" id="caraA" placeholder="Candidato B"><br>
+    <input type= "number" id="caraB" placeholder="Candidato L"> <br>
+    <input type="number" id="branc" placeholder="Votos Brancos"><br>
+    <input type= "number" id="inv" placeholder="Votos Nulos"><br>
+
+<button onclick="Resultados()">Resultados da Eleição</button>
+
+<div id= Votação></div>
+
+</body>
+</html>
+
+<script>
+    function Resultados(){
+        var VotA = Number(caraA.value)
+        var VotB = Number(caraB.value)
+        var VotC = Number(branc.value)
+        var VotD = Number(inv.value)
+        var INV = VotC + VotD
+        var Total = VotA + VotB + INV
+
+        Votação.innerHTML="<b>Total de Votos:<u> " + Total +"</u></b>"+
+        "<br> <b> Candidato B: </b>" + 100/(Total/VotA) + "% (" + VotA +") votos"+
+        "<br> <b> Candidato L: </b>" + 100/(Total/VotB) + "% ("+ VotB +") votos"+
+        "<br> <b> Inválidos: </b>" + 100/(Total/INV) + "% (" + INV +") votos"
+    }
+    
+</script>

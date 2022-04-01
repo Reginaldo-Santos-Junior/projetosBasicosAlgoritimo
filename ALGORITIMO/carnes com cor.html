@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "alimentos">
+    </div>
+
+    <button onclick = "carnes()">Carnes</button>
+    <button onclick = "legumes()">Legumes</button>
+    <button onclick= "frutas ()"> Frutas</button>
+</body>
+</html>
+
+<script>
+function carnes(){
+    alimentos.innerHTML= "come mais carne irmão!"
+    document.title = "hmmmm carnezinha"
+    alimentos.style.backgroundColor ="red"
+    alimentos.style.color= "white"
+    alimentos.style.width = "11%"
+
+}
+
+function legumes (){
+    alimentos.innerHTML= "hmmm come um legumezin é bom so!"
+    document.title = "leguminosos gostosos"
+    alimentos.style.backgroundColor = "black"
+    alimentos.style.color= "yellow" 
+    alimentos.style.width = "11%"
+}
+
+function frutas(){
+    alimentos.innerHTML="bananinha, moranguinho e manga as melhoresss"
+    document.title ="saladinha de frutas!"
+    alimentos.style.color= "green"
+    alimentos.style.backgroundColor="#00008B"
+    alimentos.style.width = "11%"
+
+}
+</script>

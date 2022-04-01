@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>num consigo dormir bem</title>
+</head>
+<body>
+    <H1 style="margin-left:40%">VEJA COMO ESTA SEU SONINHO</H1>
+    <input id ="soninho" type="number" style="margin-left:40%">
+
+<div style="margin-left:40%" id="sono"></div>
+
+<button onclick="horas()" style="margin-left:40%" >Calcular Sono</button>
+
+</body>
+</html>
+
+<script>
+
+function horas(){
+
+sono.innerHTML="Ao dormir "+ soninho.value +" horas, você dormiu <br>"+
+
+soninho.value*0.05+" horas na <b>fase 1</b> <br>"+
+
+soninho.value*0.45+" horas na <b>fase 2</b> <br>"+
+
+soninho.value*0.30+" horas na <b>fase 3</b> <br>"+
+
+soninho.value*0.20+" horas na <b>fase REM</b>"
+}
+
+</script>

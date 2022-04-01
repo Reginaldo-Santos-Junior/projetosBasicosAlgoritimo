@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input_temperatura" placeholder="insira temperatura atual">
+    <button onclick="btn_clima()"> Verificar clima</button>
+    <div id="spanclima"></div>
+</body>
+</html>
+<script>
+
+function btn_clima(){
+    var temperatura = Number (input_temperatura.value)
+    if (temperatura <10) {
+    spanclima.innerHTML = `O clima está apropriado para conservar seu alimento <br>
+    <img src="https://i.imgur.com/cD0zRbkb.jpg">` }
+
+    else {
+        spanclima.innerHTML = `O clima não está apropriado para conservar seu alimento <br>
+        <img src="https://d5y9g7a5.rocketcdn.me/wp-content/uploads/2021/06/comida-estragada-principais-sinais-de-contaminacao-dos-alimentos-1.jpg   ">`
+    }
+    
+}
+</script>

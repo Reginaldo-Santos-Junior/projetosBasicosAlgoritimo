@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições2022</title>
+</head>
+<body>
+    <input type="number" id="caraA" placeholder="Candidato B"> <br>
+    <input type="number" id="caraB" placeholder="Candidato L"> <br>
+    <input type="number" id="inv" placeholder="Votos Nulos"> <br>
+    <input type="number" id="branc" placeholder="Votos Brancos"> <br>
+
+    <button onclick="resultados()">Resultados da Eleição</button>
+    <div id="Votação"></div>
+    <div id="divA"></div>
+    <div id="AColor"></div>
+    <div id="divB"></div>
+    <div id="BColor"></div>
+    <div id="Divinv"></div>
+    <div id="invColor"></div>
+</body>
+</html>
+
+
+<script>
+
+function resultados(){
+    var VotA = Number(caraA.value)
+    var VotB = Number(caraB.value)
+    var VotC = Number(inv.value)
+    var VotD = Number(branc.value)
+    var INV = VotC + VotD
+    var Total = VotA + VotB + INV
+    var calculoA = 100/(Total/VotA)
+    var calculoB =100/(Total/VotB)
+    var calculoINV = 100/(Total/INV)
+
+
+    Votação.innerHTML="<b>Total de Votos <u>" + Total +"</b></u><br>"
+    
+    divA.innerHTML="Candidato B: "+calculoA+"% ("+ VotA +" votos)"
+    AColor.style="background-Color: green; height:30px;width:"+calculoA+"%"
+    
+    divB.innerHTML="Candidato L "+calculoB+"% ("+VotB+"votos)"
+    BColor.style="background-Color: red; height:30px;width:"+calculoB+"%"
+    
+    Divinv.innerHTML="Invalidos "+calculoINV+"% ("+INV+"votos)"
+    invColor.style="background-color: grey; height:30px; width:"+calculoINV+"%"
+
+}
+</script>

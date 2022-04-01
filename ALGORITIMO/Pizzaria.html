@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>é o massas</title>
+</head>
+<body>
+    <h1>Naldinho's Pizzaria</h1>
+
+    <input id="valor" placeholder="valor"><br>
+    <input id="sabor" placeholder="Sabor"><br>
+    <input id="pessoas" placeholder="Quantidade de Amigos"><br>
+
+    <button onclick="calculas()"> Saber valor por pessoa</button>
+    <div id="pizza"></div>
+</body>
+</html>
+
+<script>
+    function calculas(){
+    var cash = Number(valor.value)
+    var Npessoas = Number(pessoas.value)
+    var cashPP = (cash/Npessoas) 
+    var sabores = (sabor.value)
+    pizza.innerHTML="Cada um vai dar um valor de " + cashPP + " para a pizza de " + sabores
+    }
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passo o dia todo fora</title>
+</head>
+<body>
+    <h1>Calculo de beneficio aqui</h1>
+    <input id="valor" placeholder="Valor da Passagem"><br>
+    <input id="Nviagens" placeholder="Viagens por mês"><br>
+    <input id="distance" placeholder="Distância em (KM)"> <br>
+
+    <button onclick="calculo()">Calcular Beneficio</button><br>
+    <div id="VT"></div>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var onibus= Number(valor.value)
+        var viag= Number(Nviagens.value)
+        var distance2= Number(distance.value)
+        var viagempay= viag*0.10
+        var valorto = distance2*0.75
+        var apli = viagempay * valorto
+        var viagensonibus= viag*0.9
+        var valoronibus= onibus*viagensonibus
+        var Total= valoronibus + apli
+        VT.innerHTML= "Voce vai gastar "+ Total + " por mês com Busão"
+
+    }
+
+</script>

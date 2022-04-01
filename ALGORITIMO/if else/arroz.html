@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Tempo de cozimento de pessoa" id="input_arroz">
+    <button onclick="verificar()">Provar Arroz</button>
+    <div id="spantxt"></div>
+</body>
+</html>
+<script>
+function verificar(){
+    var arroz = Number (input_arroz.value)
+    if (arroz == 5){
+        spantxt.innerHTML = `Parabéns!! Você fez um arroz perfeito!! <br>
+        <img src="https://i.imgur.com/e75oEzH.jpeg">`
+    }
+    else{
+        spantxt.innerHTML = `Vish, famoso unido venceremos, ta papado! <br>
+        <img src="https://www.wikihow.com/images_en/thumb/2/22/Make-Japanese-Fried-Rice-Step-1-Version-5.jpg/550px-nowatermark-Make-Japanese-Fried-Rice-Step-1-Version-5.jpg.webp">`
+    }
+}
+
+</script>

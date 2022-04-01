@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="carro" placeholder="Insira aqui o valor do carro">
+    <br>
+    <input id="juros" placeholder="Insira taxa de juros A.M.">
+    <br>
+    <input id="parcelas" placeholder="Quantidade de parcelas" type="number">
+    <br>
+    <button onclick="prejuizo()">Calcular prejú</button>
+    <br>
+    <div id="spanText"></div>
+
+</body>
+</html>
+
+<script>
+    function prejuizo(){
+        var totalCarro = Number(carro.value)
+        var totalJuros = Number(juros.value)
+        var totalParecelas = Number(parcelas.value)
+        var calculoum = Number(totalCarro + (totalJuros.totalParecelas))
+        var calculodois = Number(calculoum * 0.80)
+        spanText.innerHTML = ` ${calculoum.toFixed(2)} e ${calculodois.toFixed(2)}`
+
+
+
+
+    }
+
+
+</script>

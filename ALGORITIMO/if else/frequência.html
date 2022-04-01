@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira sua frequência:<input id="input_frequencia" placeholder="Frequência">
+    <button onclick="btn_frequencia()">Analisar frequência</button>
+    <div id="spantxt"></div>
+  
+</body>
+</html>
+<script>
+function btn_frequencia(){
+    var faltas = Number (input_frequencia.value)
+    if (faltas >= 50){
+        spantxt.innerHTML = `<img src="https://i.imgur.com/jdW0eXg.png">`
+    }
+    else{
+        spantxt.innerHTML = `<img src="https://i.imgur.com/jpfeYgsb.jpg">`
+    }
+}
+
+</script>

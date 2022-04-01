@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     Quantidade de maçãs: <input placeholder="Quantidade de maçãs" id="qtd_macas">
+    <br>
+    <button onclick="finalizar_compra()">Finalizar compra</button>
+</body>
+</html>
+<script>
+
+function finalizar_compra(){
+    var qtdMacas = Number(qtd_macas.value)
+    var total_compra = qtdMacas * 0.75
+    if (qtdMacas > 9){
+    total_compra = qtdMacas * 0.68
+    }
+alert(`O total da compra é R$ ${total_compra.toFixed(2)}`)
+}
+
+
+
+</script>

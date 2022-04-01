@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esse jogo dnv não</title>
+</head>
+<body>
+    <h1 style="margin-left: 45%; color: green;">Brasil vs Alemanha</h1>
+
+<div id="botões" style="margin-left: 43%">
+
+<button onclick="BRA()">Gol do Brasil</button>
+<button onclick="ALE()">Gol da Alemanha</button>
+<button onclick="restart()">Recomeçar Partida</button>
+<br>
+<b> Tempo real do jogo</b>
+</div>
+
+<div id="gol" style="margin-left:45%; margin-right:36%"></div>
+
+</body>
+</html>
+
+<script>
+
+    function restart(){
+        gol.innerHTML="";
+    }
+    function BRA(){
+        gol.innerHTML+="<div style= 'color:White; background-Color:Green; margin-right: 45%'>E é GOOOOOOL do Brasil <br></div>"
+    }
+    function ALE(){
+        gol.innerHTML+="<div style= 'color:yellow; background-Color:red; margin-right: 45%'> mais um gol da alemanha <br></div>"
+    }
+</script>

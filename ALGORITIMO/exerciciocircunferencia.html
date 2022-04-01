@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="raio" placeholder="Raio da circunferência" />
+    <button onclick="area()">Calcular Área</button>
+    <div id="spancalc"></div>
+  </body>
+</html>
+<script>
+  function area() {
+    var realraio = Number(raio.value);
+    var calculo = 3.14 * realraio ** 2;
+    spancalc.innerHTML = `A área da circunferência é ${calculo}`;
+  }
+</script>

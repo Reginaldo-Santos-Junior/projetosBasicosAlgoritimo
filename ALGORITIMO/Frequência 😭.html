@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É ELE</title>
+</head>
+<body>
+    <input id ="nome" placeholder="Coloque seu Nome"><br>
+    <input type="number"id ="aulas" placeholder="Quantidade de Aulas"><br>
+    <input type= "number" id ="faltas" placeholder="Quantidade de Faltas"><br>
+
+    <button onclick= "funciona()">Calcular Frequência</button>
+
+    <div id="showme"></div><br>
+    
+    <div id="linha"></div>
+    
+</body>
+</html>
+
+<script>
+    function funciona(){
+
+    var Aulas= Number (aulas.value)
+    var Faltas= Number (faltas.value)
+    var Nome = (nome.value)
+    var Frequencia= Number (100-100/ (Aulas/Faltas))
+
+    showme.innerHTML= "<span style= color:blue> Olá "+ Nome + "! Sua frequência foi de </span><b style= color:green>" + Frequencia +"%</b>"
+    linha.style="background-color:violet ;height:30px;width:"+Frequencia+"%"
+    }
+    
+
+</script>

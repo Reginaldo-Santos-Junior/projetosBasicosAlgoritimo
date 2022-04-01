@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input_saldo" placeholder="Insira saldo da conta">
+    <br>
+    <input id="input_saque" placeholder="Valor a ser debitado">
+    <br>
+    <button onclick="analise()">Analisar conta</button>
+    <div id="spantatutu"></div>
+    
+</body>
+</html>
+<script>
+    function analise(){
+        var saldo = Number (input_saldo.value)
+        var saque = Number (input_saque.value)
+        var saldo_atual = saldo - saque
+        if(saldo_atual <0){
+            spantatutu.innerHTML = `O saldo atual da conta corrente é <span style="color: red;"><b>${saldo_atual.toFixed(2)}.</b></span>`
+        }
+        else{
+            spantatutu.innerHTML = `O saldo atual da conta corrente é <span style="color: blue;"><i>${saldo_atual.toFixed(2)}.</i></span>`
+        }
+
+    }
+</script>
